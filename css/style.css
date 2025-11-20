@@ -590,37 +590,65 @@ header .ham-burger.active span:nth-child(2){
 
 
 /*Gallery Section*/
-
-.gallery .content{
-	-webkit-display: flex;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.gallery .content .box{
-	flex:0 0 50%;
-	max-width: 50%;	
-}
-.gallery .content .box img{
-	display: block;
-	width: 100%;
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	-webkit-transition: all .5s ease;
-	transition: all .5s ease;
-}
-.gallery .content .box img:hover{
-	-webkit-filter: grayscale(0%);
-	filter: grayscale(0%);
-}
-
-.gallery h2{
-	font-size: 30px;
-    font-weight: 500;
-    color: #000000;
-    padding: 0px 0px 20px;
+/* BMI CALCULATOR */
+.bmi {
+    padding: 60px 0;
     text-align: center;
 }
+
+.bmi h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.bmi-container {
+    width: 80%;
+    max-width: 500px;
+    background: #fff;
+    padding: 25px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.input-box {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-box label {
+    font-weight: bold;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.bmi-btn {
+    width: 100%;
+    padding: 12px;
+    background: #c11325;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bmi-btn:hover {
+    background: #e63939;
+}
+
+.bmi-result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 
 
 /*Price Section*/
@@ -938,5 +966,6 @@ flex: 0 0 100%;
       font-size: 30px;
   }
 }
+
 
 
